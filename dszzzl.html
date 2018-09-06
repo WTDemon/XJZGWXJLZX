@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>大师著</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="css/jPicture.min.css">
+    <style>
+        #imgBox {
+            width: 340px;
+            height: 170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imgBox img {
+            width: 100%;
+        }
+
+        body {
+            position: relative
+        }
+
+        .box {
+
+            margin: 0 1rem;
+        }
+
+        .imgs {
+            position: absolute;
+        }
+
+        @media screen and (width: 320px) {
+            #imgBox {
+                width: 260px;
+                height: 130px;
+            }
+        }
+
+        @media screen and (width: 375px) {
+            #imgBox {
+                width: 300px;
+                height: 170px;
+            }
+        }
+
+        @media screen and (width: 414px) {
+            #imgBox {
+                width: 340px;
+                height: 170px;
+            }
+        }
+
+        @media screen and (width: 412px) {
+            #imgBox {
+                width: 340px;
+                height: 170px;
+            }
+        }
+
+        @media screen and (width: 360px) {
+            #imgBox {
+                width: 290px;
+                height: 150px;
+            }
+        }
+
+        @media screen and (width: 768px) {
+            #imgBox {
+                width: 640px;
+                height: 320px;
+            }
+        }
+
+        @media screen and (width: 1024px) {
+            #imgBox {
+                width: 840px;
+                height: 438px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./dashi.jpg" alt="" width="100%" class="imgs">
+
+
+    <div style="height:5rem;"></div>
+    <div class="box">
+
+        <div id="imgBox">
+            <div>
+                <div><a href="#1"><img src="1.jpg"></a></div>
+                <div><a href="#2"><img src="2.jpg"></a></div>
+                <div><a href="#3"><img src="3.jpg"></a></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jPicture.min.js"></script>
+    <script src="./Adaptive.js"></script>
+    <script>
+        // Javascript 代码
+        jPicture("#imgBox", {
+            type: "slide",
+            autoplay: 2000
+        });
+
+
+        // $(function(){
+        //     var Hwidth=$(window).width();
+        //     console.log(Hwidth)
+        //      if(Hwidth>300){
+        //          $('#imgBox').css({
+        //              width:'260px',
+        //              height:'130px'
+        //          })
+        //      }
+
+        // })
+    </script>
+</body>
+
+</html>
